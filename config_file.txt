@@ -1,0 +1,21 @@
+# first we need to create one configuration file with .cfg extension file
+
+In cfg file- 
+
+[Section1]
+
+username = chandrakantkotage
+password = testing
+
+# in python file
+# from configparser module import Configparser class
+
+from configparser import Configparser
+
+# create object of Configparser class
+config = Configparser()
+
+# to read data from config file
+config.read('file location')
+
+print(config.get('Section1','username')
